@@ -12,6 +12,15 @@ pętla for służy do wielokrotnego wykonywania określonego bloku kodu, dla ka�
 for i in [1, 2, 3, 4, 5]:
     print("nr ", i)
 
+# iteracja po znakach w stringu
+for char in "Python":
+    print("char: ", char)
+
+#wypisz wszystkie litery w imieniu oddzielone znakiem '#'
+name = "Nikodem"
+for char in name:
+    print(char, end="#")
+
 """
 funckja range()
 
@@ -28,6 +37,8 @@ for i in range(50, 61):
 # mozna podac trzeci argument - krok
 for i in range(0, 21, 2):  # od 0 do 20 co 2
     print("liczba parzysta: ", i)
+
+
 
 """
 pętle while
