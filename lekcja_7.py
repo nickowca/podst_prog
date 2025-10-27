@@ -22,7 +22,7 @@
 #     break
 # else:
 #     print("podales: inna liczbe niz '1'")
-from stringprep import b1_set
+
 
 # # oblicz nwd dwoch liczb (algorytm Euklidesa)
 #
