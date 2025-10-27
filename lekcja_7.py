@@ -84,3 +84,36 @@ for i in range(1, 6):
     for j in range(1, 6):
         print(f"{i * j:4}", end="")
     print()
+
+
+#szukanie wartosci maksymalnej w macierzy i jej pozycji
+
+import random
+
+#losowa macierz 5x5 1-100
+
+macierz = []
+for i in range(5):
+    wiersz = []
+    for j in range(5):
+        wiersz.append(random.randint(1, 100))
+    macierz.append(wiersz)
+
+# znajdz najwieksza wartosc i jej pozycje
+# wykorzystanie zagniezdzonych petli
+max = macierz[0][0]
+pozycja_i = 0
+pozycja_j = 0
+for i in range(5):
+    for j in range(5):
+        if macierz[i][j] > max:
+            max = macierz[i][j]
+            pozycja_i = i
+            pozycja_j = j
+print("macierz:")
+for wiersz in macierz:
+    print(wiersz)
+print(f"najwieksza wartosc to {max} na pozycji ({pozycja_i+1}, {pozycja_j+1})")
+
+
+
