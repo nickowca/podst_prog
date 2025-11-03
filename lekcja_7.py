@@ -1,61 +1,61 @@
-# haslo = "tajnehaslo"
-# podane = ""
-# attempts = 0
-# while podane != haslo and attempts < 5:
-#     podane = input("podaj haslo: ")
-#     attempts += 1
-#     if podane != haslo:
-#         print("niepoprawne haslo, sprobuj ponownie.")
-#
-# if podane == haslo:
-#     print("poprawne haslo!")
-# else:
-#     print("wykorzystales wszystkie proby. Dostep zablokowany.")
-#
-#
-# # else w petli while
-#
-# x = int(input("podaj liczbe (0 lub 1): "))
-#
-# while x==1:
-#     print("podales: '1'")
-#     break
-# else:
-#     print("podales: inna liczbe niz '1'")
+haslo = "tajnehaslo"
+podane = ""
+attempts = 0
+while podane != haslo and attempts < 5:
+    podane = input("podaj haslo: ")
+    attempts += 1
+    if podane != haslo:
+        print("niepoprawne haslo, sprobuj ponownie.")
+
+if podane == haslo:
+    print("poprawne haslo!")
+else:
+    print("wykorzystales wszystkie proby. Dostep zablokowany.")
 
 
-# # oblicz nwd dwoch liczb (algorytm Euklidesa)
-#
-# a = int(input("podaj pierwsza liczbe: "))
-# b = int(input("podaj druga liczbe: "))
-# while a != b:
-#     if a > b:
-#         a = a - b
-#     else:
-#         b = b - a
-# else:
-#     print("nwd wynosi = ", a)
-#
-# #algorytm na obliczanie nww z dodawaniem
-#
-# a1 = int(input("podaj pierwsza liczbe: "))
-# b1 = int(input("podaj druga liczbe: "))
-# a = a1
-# b = b1
-#
-#
-# while a1 != b1:
-#     if a1 < b1:
-#         a1 += a
-#     else:
-#         b1 += b
-#
-# print("nww wynosi = ", a1)
-#
+# else w petli while
+
+x = int(input("podaj liczbe (0 lub 1): "))
+
+while x==1:
+    print("podales: '1'")
+    break
+else:
+    print("podales: inna liczbe niz '1'")
+
+
+# oblicz nwd dwoch liczb (algorytm Euklidesa)
+
+a = int(input("podaj pierwsza liczbe: "))
+b = int(input("podaj druga liczbe: "))
+while a != b:
+    if a > b:
+        a = a - b
+    else:
+        b = b - a
+else:
+    print("nwd wynosi = ", a)
+
+#algorytm na obliczanie nww z dodawaniem
+
+a1 = int(input("podaj pierwsza liczbe: "))
+b1 = int(input("podaj druga liczbe: "))
+a = a1
+b = b1
+
+
+while a1 != b1:
+    if a1 < b1:
+        a1 += a
+    else:
+        b1 += b
+
+print("nww wynosi = ", a1)
+
 
 
 # metoda wyciagania wag zamien liczbe dziesietna na binarna
-
+#
 # sprawdzenie najwiekszej potegi 2 mniejszej lub rownej liczbie
 dec = int(input("podaj liczbe dziesietna: "))
 potega = 0
@@ -114,6 +114,5 @@ print("macierz:")
 for wiersz in macierz:
     print(wiersz)
 print(f"najwieksza wartosc to {max} na pozycji ({pozycja_i+1}, {pozycja_j+1})")
-
 
 
