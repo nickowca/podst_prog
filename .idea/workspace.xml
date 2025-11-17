@@ -5,7 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5afe27a0-ead4-4292-8323-0b9200f29d19" name="Changes" comment="a">
-      <change afterPath="$PROJECT_DIR$/lekcja_8.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sprawdzian 17 listopad 2025.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sprawdzian1.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -63,14 +64,20 @@
     "Python.lekcja_7.executor": "Run",
     "Python.lekcja_8.executor": "Run",
     "Python.main.executor": "Run",
+    "Python.sprawdzian 17 listopad 2025.executor": "Run",
+    "Python.sprawdzian1.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/trojanowskin/PycharmProjects/podst_prog",
     "settings.editor.selected.configurable": "com.github.copilot.settings.general.GeneralConfigurable"
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\trojanowskin\PycharmProjects\podst_prog" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\trojanowskin\PycharmProjects\podst_prog" />
     </key>
@@ -171,7 +178,15 @@
       <option name="project" value="LOCAL" />
       <updated>1762152032996</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="a">
+      <option name="closed" value="true" />
+      <created>1762158530084</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1762158530084</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
