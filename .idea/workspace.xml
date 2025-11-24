@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5afe27a0-ead4-4292-8323-0b9200f29d19" name="Changes" comment="a">
-      <change afterPath="$PROJECT_DIR$/lekcja_9.py" afterDir="false" />
+    <list default="true" id="5afe27a0-ead4-4292-8323-0b9200f29d19" name="Changes" comment="lekcja 9">
+      <change afterPath="$PROJECT_DIR$/lekcja10.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -60,6 +60,7 @@
     "Python.kartkowka.executor": "Run",
     "Python.kartkowka2.executor": "Run",
     "Python.lekcja 5.executor": "Run",
+    "Python.lekcja10.executor": "Run",
     "Python.lekcja_7.executor": "Run",
     "Python.lekcja_8.executor": "Run",
     "Python.lekcja_9.executor": "Run",
@@ -194,7 +195,15 @@
       <option name="project" value="LOCAL" />
       <updated>1763362868414</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="lekcja 9">
+      <option name="closed" value="true" />
+      <created>1763368135547</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1763368135547</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -216,6 +225,7 @@
     <MESSAGE value="update .gitignore, add Python loops examples, and revise README title" />
     <MESSAGE value="add lekcja_6.py and lekcja_7.py with examples of loops, conditionals, and binary conversion" />
     <MESSAGE value="a" />
-    <option name="LAST_COMMIT_MESSAGE" value="a" />
+    <MESSAGE value="lekcja 9" />
+    <option name="LAST_COMMIT_MESSAGE" value="lekcja 9" />
   </component>
 </project>
