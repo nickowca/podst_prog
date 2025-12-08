@@ -136,7 +136,7 @@ with open("text/output.txt", "w") as f:
 print("\nzawartosc pliku text/output.txt:\n")
 with open("text/output.txt") as f:
   print(f.read())
-
+print("\n\n")
 print("------------------")
 
 print("3. Operacje na plikach binarnych")
@@ -158,3 +158,22 @@ with open("images/image.png", "rb") as f:
     print("pierwsze 10 bajtow pliku image.png:", data)
 print("------------------")
 
+# 4. usuwanie plikow
+print("\n\n")
+print("------------------")
+
+print("3. Usuwanie plików")
+
+print("------------------")
+print("\n\n")
+
+# usuwanie pliku
+import os
+os.remove("text/output.txt")
+print("usunieto plik text/output.txt")
+# sprawdzenie czy plik istnieje
+if not os.path.exists("text/output.txt"):
+    print("plik text/output.txt nie istnieje")
+print("------------------")
+
+# usuwanie pliku, jesli istnieje
