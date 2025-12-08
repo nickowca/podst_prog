@@ -175,5 +175,3 @@ print("usunieto plik text/output.txt")
 if not os.path.exists("text/output.txt"):
     print("plik text/output.txt nie istnieje")
 print("------------------")
-
-# usuwanie pliku, jesli istnieje
