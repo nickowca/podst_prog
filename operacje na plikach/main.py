@@ -19,81 +19,81 @@ print("------------------")
 print("\n\n")
 
 
-# odczyt pliku tekstowego - standardowy sposob
+# odczyt pliku tekstowego - standardowy sposób
 # open() - otwiera plik
-# read() - odczytuje cala zawartosc pliku
-# close() - zamyka plik (wazne! zawsze nalezy zamknac plik po uzyciu)
+# read() - odczytuje całą zawartość pliku
+# close() - zamyka plik (ważne! zawsze należy zamknąć plik po użyciu)
 
 print("1a. odczyt pliku tekstowego\n")
 f = open("text/test.txt")  # otwarcie pliku do odczytu
-print(f.read())  # odczytanie i wyswietlenie calej zawartosci
-f.close()  # zamkniecie pliku
+print(f.read())  # odczytanie i wyświetlenie całej zawartości
+f.close()  # zamknięcie pliku
 
 print("------------------")
 
-# odczyt pliku tekstowego przy uzyciu with - automatyczne zamykanie pliku
-# with - menedzer kontekstu, automatycznie zamyka plik po zakonczeniu bloku
-# nie trzeba uzywac close() - plik zamyka sie automatycznie
+# odczyt pliku tekstowego przy użyciu with - automatyczne zamykanie pliku
+# with - menedżer kontekstu, automatycznie zamyka plik po zakończeniu bloku
+# nie trzeba używać close() - plik zamyka się automatycznie
 
 print("1b. odczyt pliku tekstowego przy uzyciu with\n")
-with open("text/test.txt") as f:  # automatyczne zamkniecie pliku po zakonczeniu bloku
-  print(f.read())  # odczytanie calej zawartosci
+with open("text/test.txt") as f:  # automatyczne zamknięcie pliku po zakończeniu bloku
+  print(f.read())  # odczytanie całej zawartości
 
 print("------------------")
 
-# sprawdzanie wlasciwosci pliku - nazwa, tryb, czy zamkniety
-# name - zwraca nazwe pliku
+# sprawdzanie właściwości pliku - nazwa, tryb, czy zamknięty
+# name - zwraca nazwę pliku
 # mode - zwraca tryb otwarcia pliku (r, w, a, rb, wb, etc.)
-# closed - zwraca True jesli plik jest zamkniety, False jesli otwarty
+# closed - zwraca True jeśli plik jest zamknięty, False jeśli otwarty
 
 print("1c. sprawdzanie właściwości pliku\n")
 f = open("text/test.txt", "r")  # "r" - tryb odczytu (read)
 print("Filename:", f.name)  # nazwa pliku
 print("Mode:", f.mode)  # tryb pracy
-print("Is Closed?", f.closed)  # sprawdza czy plik jest zamkniety (False)
+print("Is Closed?", f.closed)  # sprawdza czy plik jest zamknięty (False)
 
 f.close()  # zamykamy plik
-print("Is Closed?", f.closed)  # teraz plik jest zamkniety (True)
+print("Is Closed?", f.closed)  # teraz plik jest zamknięty (True)
 
 print("------------------")
 
 
-# odczyt liniami - petla for
-# iteracja po liniach pliku za pomoca petli for
-# strip() - usuwa biale znaki (spacje, entery) z poczatku i konca linii
+# odczyt liniami - pętla for
+# iteracja po liniach pliku za pomocą pętli for
+# strip() - usuwa białe znaki (spacje, entery) z początku i końca linii
 
 print("1d. odczyt liniami\n")
 with open("text/test.txt") as file:
-    for l in file:  # iteracja po kazdej linii pliku
-        print(l.strip())  # wyswietlenie linii bez bialych znakow na koncach
+    for l in file:  # iteracja po każdej linii pliku
+        print(l.strip())  # wyświetlenie linii bez białych znaków na końcach
 
 print("------------------")
 
 
-# odczyt czesciowy pliku - read(n) odczytuje n znakow
-# read(n) - odczytuje n znakow z pliku
-# przydatne przy pracy z duzymi plikami
+# odczyt częściowy pliku - read(n) odczytuje n znaków
+# read(n) - odczytuje n znaków z pliku
+# przydatne przy pracy z dużymi plikami
 
 print("1e. odczyt czesciowy pliku\n")
 with open("text/test.txt") as f:
-  print(f.read(5))  # zwroci pierwsze 5 znakow z pliku
+  print(f.read(5))  # zwróci pierwsze 5 znaków z pliku
 
 print("------------------")
 
 
 # odczyt pierwszej linii - readline()
-# readline() - odczytuje jedna linie z pliku
-# kazde kolejne wywolanie readline() czyta kolejna linie
+# readline() - odczytuje jedną linię z pliku
+# każde kolejne wywołanie readline() czyta kolejną linię
 
 print("1f. odczyt pierwszej linii\n")
 with open("text/test.txt") as f:
-  print(f.readline())  # odczytuje i wyswietla pierwsza linie
+  print(f.readline())  # odczytuje i wyświetla pierwszą linię
 
 print("------------------")
 
 
-# odczyt dwoch pierwszych linii - dwa razy readline()
-# kolejne wywolania readline() odczytuja kolejne linie
+# odczyt dwóch pierwszych linii - dwa razy readline()
+# kolejne wywołania readline() odczytują kolejne linie
 print("1g. odczyt dwoch pierwszych linii\n")
 with open("text/test.txt") as f:
   print(f.readline())  # pierwsza linia
@@ -102,12 +102,12 @@ with open("text/test.txt") as f:
 print("------------------")
 
 # odczyt wszystkich linii do listy - readlines()
-# readlines() - zwraca liste wszystkich linii z pliku
-# kazda linia jest osobnym elementem listy
+# readlines() - zwraca listę wszystkich linii z pliku
+# każda linia jest osobnym elementem listy
 print("1h. odczyt wszystkich linii do listy\n")
 with open("text/test.txt") as f:
     lines = f.readlines()  # odczytuje wszystkie linie do listy
-    print(lines)  # wyswietla liste linii
+    print(lines)  # wyświetla listę linii
 
 print("\n\n")
 
@@ -122,13 +122,13 @@ print("\n\n")
 
 
 # zapis do pliku tekstowego - write()
-# "w" - tryb zapisu (write), nadpisuje cala zawartosc pliku lub tworzy nowy plik
-# write() - zapisuje tekst do pliku (trzeba recznie dodac \n dla nowej linii)
+# "w" - tryb zapisu (write), nadpisuje całą zawartość pliku lub tworzy nowy plik
+# write() - zapisuje tekst do pliku (trzeba ręcznie dodać \n dla nowej linii)
 
 print("2a. zapis do pliku tekstowego\n")
 with open("text/output.txt", "w") as f:  # "w" nadpisuje lub tworzy nowy plik
-    f.write("pierwsza linia do zapisania\n")  # zapisujemy pierwsza linie
-    f.write("druga linia do zapisania\n")  # zapisujemy druga linie
+    f.write("pierwsza linia do zapisania\n")  # zapisujemy pierwszą linię
+    f.write("druga linia do zapisania\n")  # zapisujemy drugą linię
 print("zapisano do pliku output.txt")
 # odczyt pliku output.txt
 print("\nzawartosc pliku output.txt:\n")
@@ -139,26 +139,26 @@ print("------------------")
 
 # dopisywanie do pliku tekstowego - append()
 # "a" - tryb dopisywania (append), dodaje tekst na koniec pliku
-# nie usuwa istniejacych danych, tylko dopisuje na koniec
+# nie usuwa istniejących danych, tylko dopisuje na koniec
 print("2b. dopisywanie do pliku tekstowego\n")
 with open("text/output.txt", "a") as f:  # "a" - tryb dopisywania
-  f.write("dopisana linia\n")  # dopisujemy nowa linie na koniec
+  f.write("dopisana linia\n")  # dopisujemy nową linię na koniec
 
 # odczyt pliku output.txt
 with open("text/output.txt") as f:
-  print(f.read())  # wyswietlamy cala zawartosc
+  print(f.read())  # wyświetlamy całą zawartość
 print("------------------")
 # nadpisywanie pliku tekstowego - write()
-# "w" - tryb zapisu (write) usuwa cala poprzednia zawartosc!
-# UWAGA: uzycie "w" na istniejacym pliku usuwa jego cala zawartosc
+# "w" - tryb zapisu (write) usuwa całą poprzednią zawartość!
+# UWAGA: użycie "w" na istniejącym pliku usuwa jego całą zawartość
 print("2c. nadpisywanie pliku tekstowego\n")
-with open("text/output.txt", "w") as f:  # "w" usuwa poprzednia zawartosc
+with open("text/output.txt", "w") as f:  # "w" usuwa poprzednią zawartość
   f.write("ups! usunalem wszystko i zapisuje na nowo\n")
 
 # odczyt pliku text/output.txt
 print("\nzawartosc pliku text/output.txt:\n")
 with open("text/output.txt") as f:
-  print(f.read())  # poprzednia zawartosc zostala usunieta
+  print(f.read())  # poprzednia zawartość została usunięta
 
 print("------------------")
 
@@ -167,7 +167,7 @@ print("3. Operacje na plikach binarnych")
 print("------------------")
 print("\n\n")
 # zapis do pliku binarnego - write binary
-# "wb" - tryb zapisu binarnego (write binary) - do obrazow, filmow, etc.
+# "wb" - tryb zapisu binarnego (write binary) - do obrazów, filmów, etc.
 # "rb" - tryb odczytu binarnego (read binary)
 # pliki binarne to np. obrazy, filmy, pliki wykonywalne
 print("3a. zapis do pliku binarnego\n")
@@ -178,11 +178,11 @@ print("skopiowano plik image.png do image_copy.png")
 print("------------------")
 
 # odczyt pliku binarnego - read binary
-# read(n) w trybie binarnym odczytuje n bajtow
-# dane binarne wyswietlane sa jako bytes (np. b'\x89PNG...')
+# read(n) w trybie binarnym odczytuje n bajtów
+# dane binarne wyświetlane są jako bytes (np. b'\x89PNG...')
 print("3b. odczyt pliku binarnego\n")
 with open("images/image.png", "rb") as f:  # "rb" - odczyt binarny
-    data = f.read(10)  # odczyt pierwszych 10 bajtow
-    print("pierwsze 10 bajtow pliku image.png:", data)  # wyswietla dane binarne
+    data = f.read(10)  # odczyt pierwszych 10 bajtów
+    print("pierwsze 10 bajtow pliku image.png:", data)  # wyświetla dane binarne
 print("------------------")
 
