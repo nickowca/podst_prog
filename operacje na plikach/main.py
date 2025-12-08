@@ -1,0 +1,128 @@
+### OPERACJE NA PLIKACH ###
+
+"""
+r - odczytywanie
+w - zapisywanie
+a - dopisywanie
+b - tryb binarny
+t - tryb tekstowy
++ - otwarcie do odczytu i zapisu
+"wb" / "rb" - zapis/odczyt w trybie binarnym
+"""
+print("\n\n")
+print("------------------")
+
+
+print("1. Odczyt pliku tekstowego")
+
+print("------------------")
+print("\n\n")
+
+
+# odczyt pliku tekstowego
+
+print("1a. odczyt pliku tekstowego\n")
+f = open("text/test.txt")
+print(f.read())
+f.close()
+
+print("------------------")
+
+# using with statement
+
+print("1b. odczyt pliku tekstowego przy uzyciu with\n")
+with open("text/test.txt") as f:
+  print(f.read())
+
+print("------------------")
+
+# sprawdzanie wlasciwosci pliku
+
+print("1c. sprawdzanie właściwości pliku\n")
+f = open("text/test.txt", "r")
+print("Filename:", f.name) # nazwa pliku
+print("Mode:", f.mode) # tryb pracy
+print("Is Closed?", f.closed) # sprawdza czy plik jest zamkniety
+
+f.close()
+print("Is Closed?", f.closed)
+
+print("------------------")
+
+
+# odczyt liniami
+
+print("1d. odczyt liniami\n")
+with open("text/test.txt") as file:
+    for l in file:
+        print(l.strip())
+
+print("------------------")
+
+
+# odczyt czesciowy pliku
+
+print("1e. odczyt czesciowy pliku\n")
+with open("text/test.txt") as f:
+  print(f.read(5)) # zwroci pierwsze 5 znakow
+
+print("------------------")
+
+
+# odczyt pierwszej linii
+
+print("1f. odczyt pierwszej linii\n")
+with open("text/test.txt") as f:
+  print(f.readline())
+
+print("------------------")
+
+
+# odczyt dwoch pierwszych linii
+print("1g. odczyt dwoch pierwszych linii\n")
+with open("text/test.txt") as f:
+  print(f.readline())
+  print(f.readline())
+
+print("------------------")
+
+# odczyt wszystkich linii do listy
+print("1h. odczyt wszystkich linii do listy\n")
+with open("text/test.txt") as f:
+    lines = f.readlines()
+    print(lines)
+
+print("\n\n")
+
+print("------------------")
+
+print("2. Zapis do pliku tekstowego")
+
+print("------------------")
+
+print("\n\n")
+
+
+
+# zapis do pliku tekstowego
+
+print("2a. zapis do pliku tekstowego\n")
+with open("text/output.txt", "w") as f: # "w" nadpisuje lub tworzy nowy plik
+    f.write("pierwsza linia do zapisania\n")
+    f.write("druga linia do zapisania\n")
+print("zapisano do pliku output.txt")
+# odczyt pliku output.txt
+print("\nzawartosc pliku output.txt:\n")
+with open("text/output.txt") as f:
+    print(f.read())
+
+print("------------------")
+
+# dopisywanie do pliku tekstowego
+print("2b. dopisywanie do pliku tekstowego\n")
+with open("text/output.txt", "a") as f:
+  f.write("dopisana linia\n")
+
+# odczyt pliku output.txt
+with open("text/output.txt") as f:
+  print(f.read())
