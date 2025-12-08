@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5afe27a0-ead4-4292-8323-0b9200f29d19" name="Changes" comment="lekcja 9">
-      <change afterPath="$PROJECT_DIR$/operacje na plikach/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/operacje na plikach/text/test.txt" afterDir="false" />
+    <list default="true" id="5afe27a0-ead4-4292-8323-0b9200f29d19" name="Changes" comment="operacje na plikach">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/operacje na plikach/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/operacje na plikach/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,6 +83,7 @@
       <recent name="C:\Users\trojanowskin\PycharmProjects\podst_prog" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\trojanowskin\PycharmProjects\podst_prog\operacje na plikach\text" />
       <recent name="C:\Users\trojanowskin\PycharmProjects\podst_prog\operacje na plikach" />
       <recent name="C:\Users\trojanowskin\PycharmProjects\podst_prog" />
     </key>
@@ -208,7 +208,15 @@
       <option name="project" value="LOCAL" />
       <updated>1763368135547</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="operacje na plikach">
+      <option name="closed" value="true" />
+      <created>1765177373245</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1765177373245</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -231,7 +239,8 @@
     <MESSAGE value="add lekcja_6.py and lekcja_7.py with examples of loops, conditionals, and binary conversion" />
     <MESSAGE value="a" />
     <MESSAGE value="lekcja 9" />
-    <option name="LAST_COMMIT_MESSAGE" value="lekcja 9" />
+    <MESSAGE value="operacje na plikach" />
+    <option name="LAST_COMMIT_MESSAGE" value="operacje na plikach" />
   </component>
   <component name="github-copilot-workspace">
     <instructionFileLocations>
