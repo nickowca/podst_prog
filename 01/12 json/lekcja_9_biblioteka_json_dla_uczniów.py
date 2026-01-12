@@ -83,7 +83,8 @@ Robi to za pomocą czterech podstawowych funkcji:
 
 #### 3.1. Konwersja słownika na JSON (najczęstsze zastosowanie)
 """
-
+import os
+os.remove("biblioteka.json")
 import json
 
 osoba = {
@@ -408,37 +409,39 @@ Napisz program (używając funkcji), który symuluje prostą książkę telefoni
 """
 
 import json
-import os # moduł do pracy z systemem plików, użyteczny do sprawdzania, czy plik istnieje
+import os
 
 PLIK_KONTAKTOW = "kontakty.json"
 
 def zaladuj_kontakty():
-    # Sprawdź, czy plik istnieje i wczytaj go. W przeciwnym razie zwróć pustą listę.
-    # ...
-    pass
+    """Wczytaj kontakty z pliku lub zwróć pustą listę jeśli plik nie istnieje / jest uszkodzony."""
+    if not os.path.exists(PLIK_KONTAKTOW):
+        return []
+    try:
+        with open(PLIK_KONTAKTOW, "r", encoding="utf-8") as f:
+            return json.load(f)
+    except (json.JSONDecodeError, IOError):
+        return []
 
 def zapisz_kontakty(lista_kontaktow):
-    # Zapisz listę kontaktów do pliku JSON.
-    # ...
-    pass
+    with open(PLIK_KONTAKTOW, "w", encoding="utf-8") as f:
+        json.dump(lista_kontaktow, f, indent=4)
+    return lista_kontaktow
 
 def dodaj_kontakt(lista_kontaktow, imie, telefon):
-    # Dodaj nowy słownik do listy_kontaktow
-    # ...
-    pass
+    if lista_kontaktow is None:
+        lista_kontaktow = []
+    kontakt = {"imie": imie, "telefon": telefon}
+    lista_kontaktow.append(kontakt)
+    return lista_kontaktow
 
 def wyswietl_kontakty(lista_kontaktow):
-    # Wypisz listę w czytelny sposób
-    # ...
-    pass
+    for kontakt in lista_kontaktow:
+        print(f"Imię: {kontakt['imie']}, Telefon: {kontakt['telefon']}")
 
-# Pętla główna programu (przykładowe użycie):
 kontakty = zaladuj_kontakty()
-
-dodaj_kontakt(kontakty, "Alicja", "111-222-333")
-dodaj_kontakt(kontakty, "Bartosz", "444-555-666")
-
+kontakty = dodaj_kontakt(kontakty, "Alicja", "111-222-333")
+kontakty = dodaj_kontakt(kontakty, "Bartosz", "444-555-666")
 wyswietl_kontakty(kontakty)
-
 zapisz_kontakty(kontakty)
 print("Kontakty zapisane do", PLIK_KONTAKTOW)

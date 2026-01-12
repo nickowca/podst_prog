@@ -4,17 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5afe27a0-ead4-4292-8323-0b9200f29d19" name="Changes" comment="operacje na plikach">
-      <change afterPath="$PROJECT_DIR$/01/12 json/lekcja_9_biblioteka_json_dla_uczniów.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/01/12 operacje na plikach/dane.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/01/12 operacje na plikach/lekcja_8_operacje_na_plikach.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/01/12 operacje na plikach/liczby.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/01/12 operacje na plikach/log.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/01/12 operacje na plikach/oceny.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/01/12 operacje na plikach/tekst.txt" afterDir="false" />
+    <list default="true" id="5afe27a0-ead4-4292-8323-0b9200f29d19" name="Changes" comment="json">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lekcja1.py" beforeDir="false" afterPath="$PROJECT_DIR$/lekcja1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lekcja_2.py" beforeDir="false" afterPath="$PROJECT_DIR$/lekcja_2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/01/12 json/biblioteka.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01/12 json/lekcja_9_biblioteka_json_dla_uczniów.py" beforeDir="false" afterPath="$PROJECT_DIR$/01/12 json/lekcja_9_biblioteka_json_dla_uczniów.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,6 +22,7 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIEW_PUSH_PROTECTED_ONLY" value="true" />
     <option name="PREVIOUS_COMMIT_AUTHORS">
       <list>
         <option value="Nikodem Trojanowski &lt;trojanowski.nikodem@zseiokrosno.pl&gt;" />
@@ -284,7 +278,39 @@
       <option name="project" value="LOCAL" />
       <updated>1765182490877</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="operacje na plikach + json">
+      <option name="closed" value="true" />
+      <created>1768202937040</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1768202937040</updated>
+    </task>
+    <task id="LOCAL-00022" summary="operacje na plikach + json">
+      <option name="closed" value="true" />
+      <created>1768202987857</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1768202987857</updated>
+    </task>
+    <task id="LOCAL-00023" summary="operacje na plikach + json">
+      <option name="closed" value="true" />
+      <created>1768203103242</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1768203103242</updated>
+    </task>
+    <task id="LOCAL-00024" summary="json">
+      <option name="closed" value="true" />
+      <created>1768204690982</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1768204690982</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -308,7 +334,9 @@
     <MESSAGE value="a" />
     <MESSAGE value="lekcja 9" />
     <MESSAGE value="operacje na plikach" />
-    <option name="LAST_COMMIT_MESSAGE" value="operacje na plikach" />
+    <MESSAGE value="operacje na plikach + json" />
+    <MESSAGE value="json" />
+    <option name="LAST_COMMIT_MESSAGE" value="json" />
   </component>
   <component name="github-copilot-workspace">
     <instructionFileLocations>
