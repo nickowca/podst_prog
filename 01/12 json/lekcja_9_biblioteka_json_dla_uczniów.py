@@ -230,7 +230,12 @@ import json
 
 dane_ucznia = {"imie": "Tomek", "wiek": 19, "klasa": "4TI"}
 
+
+
 # Twój kod tutaj (użyj json.dumps i print):
+jsonzadanie = json.dumps(dane_ucznia, indent=4)
+print(jsonzadanie)
+
 
 """#### 7.2. Zapisz listę liczb do pliku JSON
 
@@ -245,6 +250,15 @@ Zapisz ją do pliku o nazwie `lista.json` (użyj `json.dump`). Następnie wczyta
 import json
 
 lista_liczb = [5, 12, 7, 9]
+
+with open("lista.json", "w") as f:
+    json.dump(lista_liczb, f)
+
+with open("lista.json", "r") as f:
+    nowa_lista = json.load(f)
+print(nowa_lista)
+srednia = sum(nowa_lista) / len(nowa_lista)
+print("Średnia:", srednia)
 
 
 # Twój kod tutaj (użyj open() oraz json.dump do zapisu pliku, następnie ponownie otwórz plik do odczytu i użyj json.load do pobrania nowej listy):
@@ -265,6 +279,10 @@ import json
 
 # Krok 2: Odczyt danych z pliku (Twój kod tutaj):
 
+with open("kolory.json", "r") as f:
+    kolory = json.load(f)
+    for kolor in kolory:
+        print(kolor)
 
 # Wskazówka: po wczytaniu otrzymasz listę. Użyj pętli for do wypisania elementów.
 
@@ -284,11 +302,24 @@ lista_uczniow = [
 # Krok 1: Zapis listy_uczniow do oceny.json
 # ...
 
+with open("oceny.json", "w") as f:
+    json.dump(lista_uczniow, f)
+
+
+
 # Krok 2: Odczyt danych z oceny.json
 # ...
 
+with open("oceny.json", "r") as f:
+    dane_uczniow = json.load(f)
 # Krok 3: Obliczenie i wypisanie średniej ocen
 # ...
+
+suma_ocen = 0
+for uczen in dane_uczniow:
+    suma_ocen += uczen["ocena"]
+srednia_ocen = suma_ocen / len(dane_uczniow)
+print("Średnia ocen:", srednia_ocen)
 
 """#### 7.5. Dane pogodowe i najwyższa temperatura
 
@@ -310,9 +341,16 @@ import json
 
 # Krok 2: Wczytaj dane z pogoda.json
 # ...
+with open("pogoda.json", "r") as f:
+    pogoda = json.load(f)
+temperatury = pogoda["temperatury"]
+
 
 # Krok 3: Wypisz najwyższą temperaturę (pamiętaj, że "temperatury" to lista)
 # ...
+
+najwyzsza_temp = max(temperatury)
+print("Najwyższa temperatura:", najwyzsza_temp)
 
 """### Zadania trudne
 
@@ -339,11 +377,25 @@ import json
 # Krok 2: Wczytaj dane z klasaA.json i klasaB.json
 # ...
 
+with open("klasaA.json", "r") as f:
+    klasa_a = json.load(f)
+with open("klasaB.json", "r") as f:
+    klasa_b = json.load(f)
+
+
 # Krok 3: Połącz w jedną listę (np. używając operatora +)
 # ...
 
+wszyscy_uczniowie = klasa_a + klasa_b
+print(wszyscy_uczniowie)
+
+
 # Krok 4: Zapis połączonej listy do wszyscy.json
 # ...
+
+with open("wszyscy.json", "w") as f:
+    json.dump(wszyscy_uczniowie, f)
+
 
 """#### 7.7. Projekt: Książka telefoniczna JSON
 
