@@ -1,0 +1,2 @@
+[2024-10-25 10:01:22] ERROR: Błąd połączenia z bazą danych. Ponawiam próbę.
+[2024-10-25 10:02:01] ERROR: Nieprawidłowe dane wejściowe w module API.

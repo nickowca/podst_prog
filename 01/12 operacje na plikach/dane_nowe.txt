@@ -1,0 +1,3 @@
+Pierwsza linia nowego pliku
+Druga linia nowego pliku
+Dopisujê kolejn¹ linijkê na koñcu
