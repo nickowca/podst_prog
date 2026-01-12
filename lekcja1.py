@@ -33,7 +33,7 @@ wiek = 22
 x=1; y=2
 print('mam', wiek, 'lata')
 print(f'mam  {wiek} lata')
-wiek = '12 lat'
+wiek = '01 lat'
 print(wiek)
 
 """## Przykald 2"""

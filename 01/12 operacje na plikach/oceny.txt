@@ -1,0 +1,6 @@
+Anna,5
+Tomek,3
+Zuzia,4
+Piotr,2
+Kasia,5
+Jan,4

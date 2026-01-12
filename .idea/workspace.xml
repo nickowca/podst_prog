@@ -5,8 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5afe27a0-ead4-4292-8323-0b9200f29d19" name="Changes" comment="operacje na plikach">
+      <change afterPath="$PROJECT_DIR$/01/12 json/lekcja_9_biblioteka_json_dla_uczniów.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/01/12 operacje na plikach/dane.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/01/12 operacje na plikach/lekcja_8_operacje_na_plikach.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/01/12 operacje na plikach/liczby.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/01/12 operacje na plikach/log.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/01/12 operacje na plikach/oceny.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/01/12 operacje na plikach/tekst.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/log/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lekcja1.py" beforeDir="false" afterPath="$PROJECT_DIR$/lekcja1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lekcja_2.py" beforeDir="false" afterPath="$PROJECT_DIR$/lekcja_2.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,7 +79,9 @@
     "Python.lekcja_11.executor": "Run",
     "Python.lekcja_7.executor": "Run",
     "Python.lekcja_8.executor": "Run",
+    "Python.lekcja_8_operacje_na_plikach.executor": "Run",
     "Python.lekcja_9.executor": "Run",
+    "Python.lekcja_9_biblioteka_json_dla_uczniów.executor": "Run",
     "Python.main.executor": "Run",
     "Python.miany.executor": "Run",
     "Python.sprawdzian 17 listopad 2025.executor": "Run",
@@ -80,17 +90,21 @@
     "RunOnceActivity.git.unshallow": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/trojanowskin/PycharmProjects/podst_prog",
+    "last_opened_file_path": "C:/Users/trojanowskin/PycharmProjects/podst_prog/01/12 json",
     "settings.editor.selected.configurable": "vcs.Git"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\trojanowskin\PycharmProjects\podst_prog\01\12 json" />
+      <recent name="C:\Users\trojanowskin\PycharmProjects\podst_prog\01\12 operacje na plikach" />
+      <recent name="C:\Users\trojanowskin\PycharmProjects\podst_prog\01\12 operacje na plikach\pliki" />
       <recent name="C:\Users\trojanowskin\PycharmProjects\podst_prog" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\trojanowskin\PycharmProjects\podst_prog\operacje na plikach" />
+      <recent name="C:\Users\trojanowskin\PycharmProjects\podst_prog\01\12 operacje na plikach" />
       <recent name="C:\Users\trojanowskin\PycharmProjects\podst_prog" />
+      <recent name="C:\Users\trojanowskin\PycharmProjects\podst_prog\operacje na plikach" />
       <recent name="C:\Users\trojanowskin\PycharmProjects\podst_prog\operacje na plikach\text" />
     </key>
   </component>
@@ -262,7 +276,15 @@
       <option name="project" value="LOCAL" />
       <updated>1765181116903</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="operacje na plikach">
+      <option name="closed" value="true" />
+      <created>1765182490877</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1765182490877</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

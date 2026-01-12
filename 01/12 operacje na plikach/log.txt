@@ -1,0 +1,6 @@
+[2024-10-25 10:01:15] INFO: Aplikacja uruchomiona.
+[2024-10-25 10:01:22] ERROR: Błąd połączenia z bazą danych. Ponawiam próbę.
+[2024-10-25 10:01:30] WARNING: Niewystarczająca ilość pamięci.
+[2024-10-25 10:01:45] INFO: Użytkownik 'Anna' zalogowany pomyślnie.
+[2024-10-25 10:02:01] ERROR: Nieprawidłowe dane wejściowe w module API.
+[2024-10-25 10:02:11] INFO: Operacja zakończona sukcesem.
