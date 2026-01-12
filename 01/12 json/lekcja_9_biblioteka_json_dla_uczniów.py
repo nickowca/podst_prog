@@ -123,7 +123,6 @@ Warto zauważyć, że Pythonowy `None` staje się JSON-owym `null`.
 """
 
 import json
-#print("Wiek:" + 42)
 print("Liczba całkowita:", json.dumps(42))
 print("Liczba zmiennoprzecinkowa:", json.dumps(3.14))
 print("Tekst:", json.dumps("Hello"))
