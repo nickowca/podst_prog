@@ -11,5 +11,5 @@ class Car:
 
 new_car = Car("BMW", "X5", 2020)
 print(new_car.display_info())
-
+print(type(new_car))
 print(new_car)
