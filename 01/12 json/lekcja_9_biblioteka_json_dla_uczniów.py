@@ -445,3 +445,80 @@ kontakty = dodaj_kontakt(kontakty, "Bartosz", "444-555-666")
 wyswietl_kontakty(kontakty)
 zapisz_kontakty(kontakty)
 print("Kontakty zapisane do", PLIK_KONTAKTOW)
+
+####################################################################################################
+
+# import json
+# import os
+#
+# PLIK_KONTAKTOW = "kontakty.json"
+#
+# def zaladuj_kontakty():
+#     if os.path.exists(PLIK_KONTAKTOW):
+#         with open(PLIK_KONTAKTOW, "r", encoding="utf-8") as f:
+#             return json.load(f)
+#     return []
+#
+#
+# def zapisz_kontakty(lista_kontaktow):
+#     with open(PLIK_KONTAKTOW, "w", encoding="utf-8") as f:
+#         json.dump(lista_kontaktow, f, indent=4)
+#
+# def dodaj_kontakt(lista_kontaktow: list, imie: str, telefon: str):
+#     lista_kontaktow.append({"imie":imie, "telefon":telefon})
+#     pass
+#
+# def wyswietl_kontakty(lista_kontaktow):
+#     for kontakt in lista_kontaktow:
+#         for index, value in kontakt.items()
+#             print(f"{index}: {value}", end=' ')
+#         print()
+
+
+"""
+zadanie
+
+napisz program, ktory z piku pobierze oceny ucznia z pliku oceny2.txt obliczy srednie tych ocen dla kazdego z uczniow a anastpnie zapisze do nowego pliku tekstowym srednie_oceny.txt w formacie imie: srednia_ocena
+"""
+
+
+
+oceny_uczniow = {}
+
+os.remove("srednie_oceny.txt")
+
+with open("oceny2.txt", "r", encoding="utf-8") as file:
+    for line in file:
+        line = line.strip() # usuwa biale znaki na koncu linii
+        imie, oceny_txt = line.split(":") # dzieli linie na imie i oceny
+
+        oceny_txt = oceny_txt.split() # dzieli oceny na liste
+        oceny = [int(ocena) for ocena in oceny_txt] # konwertuje oceny na liczby calkowite
+        srednia = sum(oceny) / len(oceny) # oblicza srednia ocen
+
+        with open("srednie_oceny.txt", "a") as output_file:
+            output_file.write(f"{imie}: {srednia:.2f}\n") # zapisuje imie i srednia do pliku
+
+        print("")
+
+
+#wersja json
+
+import json
+srednie = []
+try:
+    with open("oceny2.json", "r", encoding="utf-8") as file:
+        dane = json.load(file)
+        for uczen in dane:
+            imie = uczen["imie"]
+            oceny = uczen["oceny"]
+            srednia = sum(oceny) / len(oceny)
+            srednie.append({"imie": imie, "srednia": round(srednia, 2)})
+
+    with open("srednie_oceny.json", "w", encoding="utf-8") as output_file:
+        json.dump(srednie, output_file, indent=12)
+
+except FileNotFoundError:
+    print("Plik oceny2.json nie istnieje.")
+except json.JSONDecodeError:
+    print("Błąd w odczycie pliku JSON.")
