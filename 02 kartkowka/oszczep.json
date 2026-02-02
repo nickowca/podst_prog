@@ -1,0 +1,14 @@
+[
+  {
+    "zawodnik": "Jan Kowalski",
+    "rzuty": [62.5, 64.1, 63.8, 65.0, 64.3]
+  },
+  {
+    "zawodnik": "Adam Nowak",
+    "rzuty": [58.2, 59.0, 60.1, 59.8, 58.9]
+  },
+  {
+    "zawodnik": "Piotr Zielinski",
+    "rzuty": [70.3, 71.0, 69.5, 72.1, 71.8]
+  }
+]

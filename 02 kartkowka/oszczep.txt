@@ -1,0 +1,4 @@
+Jan Kowalski: 62.5 64.1 63.8 65.0 64.3
+Adam Nowak: 58.2 59.0 60.1 59.8 58.9
+Piotr Zielinski: 70.3 71.0 69.5 72.1 71.8
+Krzysztof Mazur: 55.0 56.2 54.9 56.0 55.5

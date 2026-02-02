@@ -4,11 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5afe27a0-ead4-4292-8323-0b9200f29d19" name="Changes" comment="json">
-      <change afterPath="$PROJECT_DIR$/01/12 json/oceny2.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/01/12 json/oceny2.txt" afterDir="false" />
+    <list default="true" id="5afe27a0-ead4-4292-8323-0b9200f29d19" name="Changes" comment="Add Car class with initialization and display method">
+      <change afterPath="$PROJECT_DIR$/02 kartkowka/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/02 kartkowka/oszczep.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/02 kartkowka/oszczep.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/02 kartkowka/sprawdzian_pliki.pdf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/01/12 json/lekcja_9_biblioteka_json_dla_uczniów.py" beforeDir="false" afterPath="$PROJECT_DIR$/01/12 json/lekcja_9_biblioteka_json_dla_uczniów.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/01/26 programowanie obiektowe/oop.py" beforeDir="false" afterPath="$PROJECT_DIR$/01/26 programowanie obiektowe/oop.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,24 +81,27 @@
     "Python.lekcja_9_biblioteka_json_dla_uczniów.executor": "Run",
     "Python.main.executor": "Run",
     "Python.miany.executor": "Run",
+    "Python.oop.executor": "Run",
     "Python.sprawdzian 17 listopad 2025.executor": "Run",
     "Python.sprawdzian1.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/trojanowskin/PycharmProjects/podst_prog/01/12 json",
+    "last_opened_file_path": "C:/Users/trojanowskin/PycharmProjects/podst_prog/02 kartkowka",
     "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\trojanowskin\PycharmProjects\podst_prog\02 kartkowka" />
       <recent name="C:\Users\trojanowskin\PycharmProjects\podst_prog\01\12 json" />
       <recent name="C:\Users\trojanowskin\PycharmProjects\podst_prog\01\12 operacje na plikach" />
       <recent name="C:\Users\trojanowskin\PycharmProjects\podst_prog\01\12 operacje na plikach\pliki" />
       <recent name="C:\Users\trojanowskin\PycharmProjects\podst_prog" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\trojanowskin\PycharmProjects\podst_prog\02 kartkowka" />
       <recent name="C:\Users\trojanowskin\PycharmProjects\podst_prog\01\12 operacje na plikach" />
       <recent name="C:\Users\trojanowskin\PycharmProjects\podst_prog" />
       <recent name="C:\Users\trojanowskin\PycharmProjects\podst_prog\operacje na plikach" />
@@ -322,7 +327,31 @@
       <option name="project" value="LOCAL" />
       <updated>1768205518987</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="Add functionality to calculate and save student averages from grades file">
+      <option name="closed" value="true" />
+      <created>1769415431270</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1769415431270</updated>
+    </task>
+    <task id="LOCAL-00027" summary="Add Car class with initialization and display method">
+      <option name="closed" value="true" />
+      <created>1769416152299</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1769416152299</updated>
+    </task>
+    <task id="LOCAL-00028" summary="Add Car class with initialization and display method">
+      <option name="closed" value="true" />
+      <created>1769416173591</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1769416173591</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -348,7 +377,20 @@
     <MESSAGE value="operacje na plikach" />
     <MESSAGE value="operacje na plikach + json" />
     <MESSAGE value="json" />
-    <option name="LAST_COMMIT_MESSAGE" value="json" />
+    <MESSAGE value="Add functionality to calculate and save student averages from grades file" />
+    <MESSAGE value="Add Car class with initialization and display method" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add Car class with initialization and display method" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="github-copilot-workspace">
     <instructionFileLocations>
