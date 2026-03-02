@@ -5,10 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5afe27a0-ead4-4292-8323-0b9200f29d19" name="Changes" comment="Add Car class with initialization and display method">
-      <change afterPath="$PROJECT_DIR$/02 kartkowka/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/02 kartkowka/oszczep.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/02 kartkowka/oszczep.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/02 kartkowka/sprawdzian_pliki.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/02/9 oop/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/03/katalog cos biblioteka.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/01/26 programowanie obiektowe/oop.py" beforeDir="false" afterPath="$PROJECT_DIR$/01/26 programowanie obiektowe/oop.py" afterDir="false" />
     </list>
@@ -71,6 +69,7 @@
   "keyToString": {
     "Python.kartkowka.executor": "Run",
     "Python.kartkowka2.executor": "Run",
+    "Python.katalog cos biblioteka.executor": "Run",
     "Python.lekcja 5.executor": "Run",
     "Python.lekcja10.executor": "Run",
     "Python.lekcja_11.executor": "Run",

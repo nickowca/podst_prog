@@ -45,16 +45,37 @@ class Produkt:
     def __str__(self) -> str:
         return f"{self.nazwa} (Cena {self.cena}zł)"
 
-    def __mul__(self, ilosc: int) -> int:
-        return self.cena * ilosc
-
-    def wypisz(self) -> str:
-        print(f"{self.nazwa} (cena: {self.cena}zł Ilosc sztuk: {self.liczba_sztuk})")
-
-oranges = Produkt("pomaranacze", 3.99)
-pen = Produkt("pendrive", 50)
-
-oranges.wypisz()
-print(pen*10)
+#     def __mul__(self, ilosc: int) -> int:
+#         return self.cena * ilosc
+#
+#     def wypisz(self) -> str:
+#         print(f"{self.nazwa} (cena: {self.cena}zł Ilosc sztuk: {self.liczba_sztuk})")
+#
+# oranges = Produkt("pomaranacze", 3.99)
+# pen = Produkt("pendrive", 50)
+#
+# oranges.wypisz()
+# print(pen*10)
 
 class Dog:
+    division = "ssak"
+    counter = 0
+
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+        self.life_expectancy = 12
+        Dog.counter += 1
+
+
+if __name__ == "__main__":
+    print(f"Division: {Dog.division}")
+    dog1 = Dog("Burek", 5)
+    dog2 = Dog("Azor", 3)
+    print(f"Number of dogs created: {Dog.counter}")
+    print(f"{dog1.name} is {dog1.age} years old.")
+    dog1.life_expectancy = 14
+    print(f"{dog1.name} has a life expectancy of {dog1.life_expectancy} years.")
+
+
+
