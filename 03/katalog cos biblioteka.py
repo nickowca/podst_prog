@@ -36,6 +36,27 @@ class Library:
                 Library.book_count -= 1
                 break
 
+    def save_file(self, filename):
+        try:
+            with open(filename, 'w') as file:
+                for book in self.books:
+                    file.write(f"{book.author};{book.title};{book.category};{book.pages};{book.year}\n")
+        except Exception as e:
+            print(f"An error occurred while saving: {e}")
+
+    def import_books(self, filename):
+        try:
+            with open(filename, 'r') as file:
+                for line in file:
+                    author, title, category, pages, year = line.strip().split(';')
+                    self.add_book(Book(author, title, category, int(pages), int(year)))
+        except FileNotFoundError:
+            print("File not found.")
+        except Exception as e:
+            print(f"An error occurred: {e}")
+
+
+
 
 
 def menu(library: Library):
@@ -45,7 +66,9 @@ def menu(library: Library):
         print("2. Show books")
         print("3. Remove book (by title)")
         print("4. Show book count")
-        print("5. Exit")
+        print("5. Import books from file")
+        print("6. Save books to file")
+        print("7. Exit")
         choice = input("Choose an option (1-5): ").strip()
 
         if choice == "1":
@@ -81,11 +104,19 @@ def menu(library: Library):
             print("Number of books:", Library.book_count)
 
         elif choice == "5":
+            filename = input("Enter filename to import from: ").strip()
+            library.import_books(filename)
+
+        elif choice == "6":
+            filename = input("Enter filename to save to: ").strip()
+            library.save_file(filename)
+
+        elif choice == "7":
             print("Program terminated.")
             break
 
         else:
-            print("Invalid choice. Select 1-5.")
+            print("Invalid choice. Select 1-7.")
 
 
 l = Library()

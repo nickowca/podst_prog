@@ -1,0 +1,12 @@
+Jane Austen;Pride and Prejudice;Classic Romance;432;1813
+Frank Herbert;Dune;Science Fiction;617;1965
+Tara Westover;Educated;Memoir;352;2018
+Stephen King;The Shining;Horror;447;1977
+Agatha Christie;And Then There Were None;Mystery;272;1939
+Yuval Noah Harari;Sapiens: A Brief History of Humankind;Non-Fiction;443;2011
+Gabriel García Márquez;One Hundred Years of Solitude;Magical Realism;417;1967
+Donna Tartt;The Secret History;Literary Fiction;559;1992
+Andy Weir;The Martian;Science Fiction;369;2011
+George Orwell;1984;Dystopian;328;1949
+Madeline Miller;Circe;Fantasy;393;2018
+Carl Sagan;Cosmos;Science;396;1980
