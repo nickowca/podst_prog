@@ -4,16 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5afe27a0-ead4-4292-8323-0b9200f29d19" name="Changes" comment="Add Car class with initialization and display method">
-      <change afterPath="$PROJECT_DIR$/02/9 oop/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/03/katalog cos biblioteka.py" afterDir="false" />
+    <list default="true" id="5afe27a0-ead4-4292-8323-0b9200f29d19" name="Changes" comment="importowanie ksiazek z pliku tekstowego">
+      <change afterPath="$PROJECT_DIR$/03/16/figury.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/03/16/pojazdy.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/03/biblioteka rf/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/01/26 programowanie obiektowe/oop.py" beforeDir="false" afterPath="$PROJECT_DIR$/01/26 programowanie obiektowe/oop.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CopilotPersistence">
+    <persistenceIdMap>
+      <entry key="_C:/Users/trojanowskin/PycharmProjects/podst_prog" value="33gIf51plp0ITVa7KiMPJ5jfLGU" />
+    </persistenceIdMap>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -67,6 +72,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Python.figury.executor": "Run",
     "Python.kartkowka.executor": "Run",
     "Python.kartkowka2.executor": "Run",
     "Python.katalog cos biblioteka.executor": "Run",
@@ -81,6 +87,7 @@
     "Python.main.executor": "Run",
     "Python.miany.executor": "Run",
     "Python.oop.executor": "Run",
+    "Python.pojazdy.executor": "Run",
     "Python.sprawdzian 17 listopad 2025.executor": "Run",
     "Python.sprawdzian1.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -88,7 +95,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
     "last_opened_file_path": "C:/Users/trojanowskin/PycharmProjects/podst_prog/02 kartkowka",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+    "settings.editor.selected.configurable": "preferences.updates"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -350,7 +357,31 @@
       <option name="project" value="LOCAL" />
       <updated>1769416173591</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="Add Book and Library classes with functionality to manage books">
+      <option name="closed" value="true" />
+      <created>1772439950473</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1772439950473</updated>
+    </task>
+    <task id="LOCAL-00030" summary="oop luty">
+      <option name="closed" value="true" />
+      <created>1772439967455</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1772439967455</updated>
+    </task>
+    <task id="LOCAL-00031" summary="importowanie ksiazek z pliku tekstowego">
+      <option name="closed" value="true" />
+      <created>1773038574529</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1773038574529</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -378,7 +409,10 @@
     <MESSAGE value="json" />
     <MESSAGE value="Add functionality to calculate and save student averages from grades file" />
     <MESSAGE value="Add Car class with initialization and display method" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add Car class with initialization and display method" />
+    <MESSAGE value="Add Book and Library classes with functionality to manage books" />
+    <MESSAGE value="oop luty" />
+    <MESSAGE value="importowanie ksiazek z pliku tekstowego" />
+    <option name="LAST_COMMIT_MESSAGE" value="importowanie ksiazek z pliku tekstowego" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
