@@ -32,3 +32,4 @@ class Motocykl(Pojazd):
 
 s = Samochod("Toyota", 180, 4)
 print(s.info())
+
